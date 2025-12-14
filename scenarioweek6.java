@@ -1,23 +1,24 @@
+public class scenarioweek6 {
+    public static void main(String[] args) {
 
-/**
- * Write a description of class scenarioweek6 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class scenarioweek6
-{
-    public static void main(String[] args)
-    {
-       String[][] seats = {{"Ashish ","Bhuvan", "Harsh"},{null, null, null}};
+        String[] categories = {"Fiction", "Nepali"};
 
-        for (int i = 0; i < 2; i++) {
-            System.out.print("Row " + (i + 1) + ": ");
-            for (int j = 0; j < 3; j++) {
-                if (seats[i][j] == null || seats[i][j].isEmpty()) {
-                    System.out.print("empty ");
-                } else {
-                    System.out.print(seats[i][j] + " ");
+        String[][] titles = new String[2][1];
+        double[][] prices = new double[2][1];
+
+        titles[0][0] = "The Alchemist";
+        prices[0][0] = 650.0;
+
+        titles[1][0] = "Asahamati - 5";
+        prices[1][0] = 750.0;
+
+        for (int i = 0; i < categories.length; i++) {
+            System.out.println("Category: " + categories[i]);
+
+            for (int j = 0; j < titles[i].length; j++) {
+                if (titles[i][j] != null) { 
+                    System.out.println("  Title: " + titles[i][j]);
+                    System.out.printf("  Price: Rs. %.2f%n", prices[i][j]);
                 }
             }
             System.out.println();
