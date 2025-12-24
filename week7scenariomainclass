@@ -1,0 +1,24 @@
+package week7workshop;
+
+
+public class main
+{
+   public static void main(String[] args)
+    {
+        bankaccount b1= new bankaccount(34516,"Herobrine",1000000);
+        bankaccount b2= new bankaccount(77834,"Dhuran",100000);
+        
+       
+        System.out.println("Acc number ="+b1.num+"\n"+"Name ="+b1.name+"\n"+"Balance ="+b1.balance);
+         b1.deposit(10000);
+         b1.withdraw(10000);
+         b1.disbalance();
+       
+        
+        System.out.println("Acc number ="+b2.num+"\n"+"Name ="+b2.name+"\n"+"Balance ="+b2.balance);
+        b2.deposit(10000);
+        b2.withdraw(100000);
+        b2.disbalance();
+
+    } 
+}
